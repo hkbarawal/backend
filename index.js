@@ -8,9 +8,17 @@ app.get('/', (req, res) => {
 app.get('/twitter',(req,res)=>{
     res.send('hedotcom');
 })
+const githubData ={
+    name:'hemant',
+    age:23
+}
 
 app.get('/login',(req,res)=>{
     res.send('<h1>please login my page</h1>');
+})
+
+app.get('/github',(req,res)=>{
+    res.send(githubData);
 })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
